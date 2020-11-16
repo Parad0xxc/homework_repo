@@ -14,8 +14,9 @@
     font-style: normal;                    
 }
 
-.body {
-    min-height: 323px;  
+body { 
+    width: 1280px;
+    margin: 0 auto;
 }
 
 .header {
@@ -206,6 +207,8 @@
 .userphoto {
     width: 75px;
     height: 75px;
+    border-radius: 50%;
+    border: 1px solid #445162
 }
 
 .comment {
@@ -406,7 +409,34 @@
 }
 
 .socials {
-    margin-top: 37px;
+    display: flex;
+    justify-content: space-between;
+    height: 43px;
+    margin-top: 37px;  
+}
+
+.social__link {
+    
+    text-decoration: none;
+    font-size: 30px;
+    background-color:#ffffff;
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    margin-right: 7px;
+    border-radius: 50%;
+}
+
+.soc__img {
+    width: 45px;
+    padding: 8px;
+    color: #445162;
+    border-radius: 50%;
+}
+
+.soc__img:hover {
+    background-color: silver;
+    color: royalblue;   
 }
 
 .copyright {
