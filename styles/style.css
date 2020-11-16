@@ -48,9 +48,15 @@
     padding-left: 5px;
 }
 
+/* Поставил видео вместо картинки, этот блок пока не нужен.
 .header__img {
     width: 469px;
     height: 214px;
+    margin: 80px 50px 59px;
+} */
+
+.header__vid {
+    width: 469px;
     margin: 80px 50px 59px;
 }
 
@@ -99,9 +105,15 @@
     color: #333333;
 }
 
+/* Добавил видео вместо картинки, данный блок пока не нужен
 .about__img {
     width: 430px;
     height: 245px;
+    margin: 50px 50px 59px;
+} */
+
+.about__vid {
+    width: 430px;
     margin: 50px 50px 59px;
 }
 
@@ -197,13 +209,14 @@
 }
 
 .comment {
+    position: relative;
     width: 483px;
     background-color: #ebebeb;
     margin-bottom: 24px;
     margin-left: 20px;
     border:1px transparent;
     border-radius: 5px;
-    padding: 0 20px;
+    padding: 0 28px;
 }
 
 .comment__text {
@@ -211,8 +224,19 @@
     line-height: 18px;
     font-weight: 400;
     font-style: italic;
-    color: #333333;
-    
+    color: #333333;    
+}
+
+.comment::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 0px;
+    border: 29px solid transparent;
+    border-right: 27px solid #ebebeb;
+    position: absolute;
+    top: 10px;
+    left: -40px;
 }
 
 .comment__sign {
@@ -328,6 +352,10 @@
     line-height: 24px;
     font-weight: 400;
     color: #445162;
+}
+
+.msg-inp {
+    padding-top: 10px;
 }
 
 .name {
